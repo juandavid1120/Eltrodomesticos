@@ -69,4 +69,13 @@ public class Nevera extends Eletrodomestico {
 
     }
 
+    @Override
+    public String toString() {
+        return "Nevera{" +
+                "marca='" + marca + '\'' +
+                ", capacidad=" + capacidad +
+                ", Consumo=" + getConsumo() +
+                ", Procedencia=" + getConsumo() +
+                '}';
+    }
 }

@@ -3,6 +3,7 @@ package pck1;
 public class Eletrodomestico {
     private String consumo;
     private String procedencia;
+    private String nombre ;
 
     public Eletrodomestico(String consumo, String procedencia) {
         this.consumo = consumo;
@@ -23,6 +24,14 @@ public class Eletrodomestico {
 
     public void setProcedencia(String procedencia) {
         this.procedencia = procedencia;
+    }
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
     }
 
     public double precioElectrodomestico() {
@@ -54,5 +63,14 @@ public class Eletrodomestico {
                 break;
         }
         return precioIni;
+    }
+
+    @Override
+    public String toString() {
+        return "Eletrodomestico{" +
+                "consumo='" + consumo + '\'' +
+                ", procedencia='" + procedencia + '\'' +
+                ", nombre='" + nombre + '\'' +
+                '}';
     }
 }

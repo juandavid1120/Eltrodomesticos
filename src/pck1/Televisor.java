@@ -92,6 +92,15 @@ public class Televisor extends Eletrodomestico {
 
         }
 
-
+    @Override
+    public String toString() {
+        return "Televisor{" +
+                "Consumo='" + marca + '\'' +
+                "Procedencia='" + marca + '\'' +
+                "marca='" + marca + '\'' +
+                ", Tamaño=" + Tamaño +
+                ", TDT=" + TDT +
+                '}';
+    }
 }
 
